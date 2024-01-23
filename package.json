@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.3",
+    "icons": "^1.0.0",
+    "keycloak-angular": "^15.0.0"
+  }
+}

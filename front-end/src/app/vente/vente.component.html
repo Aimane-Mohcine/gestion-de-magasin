@@ -1,0 +1,54 @@
+<div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+  <div class="card text-center w-75">
+    <div class="card-header text-center bg-primary">
+      <h4 class="text-light mb-0 rounded-bottom-3">Les ventes</h4>
+    </div>
+    <div class="card-body">
+
+      <table class="table table-bordered table-hover mx-auto">
+
+        <thead class="table-primary">
+        <tr>
+          <th>ID</th>
+          <th>Nom Achteur</th>
+          <th>Ville Achteur</th>
+          <th>Marque</th>
+          <th>prix</th>
+          <th>modifier</th>
+          <th>supprimer</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let v of ventes">
+          <td>{{v.id}}</td>
+          <td>{{v.achteur.nom}}</td>
+          <td>{{v.achteur.ville}}</td>
+          <td>{{v.produit.marque}}</td>
+          <td>{{v.produit.prix}}</td>
+
+          <td>
+            <button class="btn "   (click)="send(v.achteur.id)  "  >
+              <i class="bi bi-pencil fs-4 text-success"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn "   (click)="getVente(v.id)"  >
+              <i class="bi bi-trash fs-4 text-danger"></i>
+            </button>
+          </td>
+
+        </tr>
+        </tbody>
+
+      </table>
+
+    </div>
+    <div class="card-footer text-muted">
+      Total des ventes : {{ ventes.length }}
+    </div>
+  </div>
+</div>
+
+
+

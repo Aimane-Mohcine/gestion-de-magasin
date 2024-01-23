@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magasin</title>
+  <!-- Liens CDN de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand font-weight-bold text-primary" href="#"><span class="bi bi-cart"> Magasin d'Électronique</span></a>
+
+  <!-- Toggle button for small screens -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navigation links -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/home">Accueil <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/produit">Produits</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/achteur">Acheteurs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/vente">Ventes</a>
+      </li>
+      <li>
+        <!-- Dans votre composant ou template -->
+  <li class="nav-item">
+
+        <button type="button" class="btn  position-relative"  data-bs-placement="top" data-bs-toggle="modal"
+                data-bs-target="#myModal"  (click)="S_notification.getNotification()">
+          notification <span class="bi bi-bell" ></span>
+          <span *ngIf="S_notification.isVisible" class="position-absolute top-0 start-95 translate-middle badge rounded-pill bg-danger"  >
+        {{S_notification.nbrN}}<!-- Nombre de notifications -->
+      </span>
+        </button>
+
+    </li>
+
+
+    </ul>
+
+    <!-- Search form -->
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Recherche</button>
+    </form>
+
+    <!-- User dropdown -->
+    <ul class="navbar navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+         <span *ngIf="profile; else not_logged_in">
+              {{profile.username}}
+            </span>
+          <ng-template #not_logged_in>
+            Not Logged
+          </ng-template>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" (click)="login()">Login</a></li>
+          <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
+          <li><hr class="dropdown-divider"></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="p-3 container">
+          <div class="card">
+            <div class="card-title text-center   rounded-bottom-5 bg-primary" ><h3 class="p-lg-1 fw-bolder fs-4 text-light">Notification</h3></div>
+            <div class="card-body">
+              <div class="row">
+
+                <div class="col-md-6 ">
+                </div>
+                  <table>
+                    <tbody>
+                    <ng-container *ngIf="S_notification.notifications">
+                      <ng-container *ngFor="let n of S_notification.notifications.slice().reverse()">
+                        <tr>
+                          <td colspan="4" class="text-center">{{n.body}}</td>
+                        </tr>
+                        <hr class="my-4">
+                      </ng-container>
+                    </ng-container>
+
+                    </tbody>
+                  </table>
+                </div>
+                <div><hr></div>
+                <!-- Modal footer -->
+                <div class="d-grid">
+                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" (click)="S_notification.close()">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<router-outlet></router-outlet>

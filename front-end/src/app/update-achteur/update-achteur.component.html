@@ -1,0 +1,24 @@
+<div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+  <div class="card text-center w-75">
+    <div class="card-header text-center bg-primary">
+      <h4 class="text-light mb-0 rounded-bottom-3">Modifier un acheteur</h4>
+    </div>
+    <div class="card-body">
+      <form (submit)="submitForm()">
+        <div class="mb-3">
+          <label for="nom" class="form-label">Nom de l'acheteur :</label>
+          <input type="text" class="form-control" id="nom" name="nom" [(ngModel)]="nom" required>
+        </div>
+        <div class="mb-3">
+          <label for="ville" class="form-label">Ville de l'acheteur :</label>
+          <input type="text" class="form-control" id="ville" name="ville" [(ngModel)]="ville" required>
+        </div>
+        <button type="submit" class="btn btn-success">Modifier</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+

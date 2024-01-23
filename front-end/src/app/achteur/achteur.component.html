@@ -1,0 +1,50 @@
+<div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+  <div class="card text-center w-75">
+    <div class="card-header text-center bg-primary">
+      <h4 class="text-light mb-0 rounded-bottom-3">Les acheteurs</h4>
+    </div>
+    <div class="card-body">
+
+      <table class="table table-bordered table-hover mx-auto">
+
+        <thead class="table-primary">
+        <tr>
+          <th>ID</th>
+          <th>Nom</th>
+          <th>Ville</th>
+          <th>modifier</th>
+          <th>supprimer</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let acheteur of achteurs">
+          <td>{{acheteur.id}}</td>
+          <td>{{acheteur.nom}}</td>
+          <td>{{acheteur.ville}}</td>
+          <td>
+            <button class="btn "  (click)="send(acheteur.id)    ">
+              <i class="bi bi-pencil fs-4 text-success"></i>
+            </button>
+          </td>
+          <td>
+            <button class="btn " (click)="delete(acheteur.id)"  >
+
+              <i class="bi bi-trash fs-4 text-danger"></i>
+            </button>
+          </td>
+
+        </tr>
+        </tbody>
+
+      </table>
+
+    </div>
+    <div class="card-footer text-muted">
+      Total d'acheteurs : {{ achteurs.length }}
+    </div>
+  </div>
+</div>
+
+
+

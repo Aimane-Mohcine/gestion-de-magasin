@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4aa65b93-8fc6-483a-bb3a-1fdcf80ace72" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/devops.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Achteur/src/main/java/com/example/achteur/publisher/RabbitProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Achteur/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Discovry-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GatWay-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GatWay-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Produit/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Produit/src/main/java/com/example/produit/Config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Produit/src/main/java/com/example/produit/publisher/RabbitProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Produit/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vente/src/main/java/com/example/vente/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vente/src/main/java/com/example/vente/publisher/RabbitProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vente/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/assets/silent-check-sso.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/example/notification/Entites/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/example/notification/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/example/notification/consomer/RabbitMQConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/example/notification/repository/NotificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/example/notification/web/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Achteur/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Achteur/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Achteur/src/main/java/com/example/achteur/web/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Achteur/src/main/java/com/example/achteur/web/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Achteur/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Achteur/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Config-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Discovry-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Discovry-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatWay-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GatWay-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatWay-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/GatWay-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Produit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Produit/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Produit/src/main/java/com/example/produit/Entities/Produit.java" beforeDir="false" afterPath="$PROJECT_DIR$/Produit/src/main/java/com/example/produit/Entities/Produit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Produit/src/main/java/com/example/produit/ProduitApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Produit/src/main/java/com/example/produit/ProduitApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Produit/src/main/java/com/example/produit/web/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Produit/src/main/java/com/example/produit/web/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Produit/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Produit/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vente/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Vente/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vente/src/main/java/com/example/vente/Web/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Vente/src/main/java/com/example/vente/Web/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vente/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Vente/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2b8PEP4RviNfHC8U0LeNJhiqnH7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AchteurApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscovryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatWayServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.NotificationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ProduitApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.VenteApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hp/Desktop/final projet/devops/Vente/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\hp\\Desktop\\final projet\\devops\\front-end\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\Desktop\final projet\devops\Vente\src\main\resources" />
+      <recent name="C:\Users\hp\Desktop\final projet\devops\Produit\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.NotificationApplication">
+    <configuration name="AchteurApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Achteur" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.achteur.AchteurApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Config-Service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.configservice.ConfigServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscovryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Discovry-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.discovryservice.DiscovryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatWayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="GatWay-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gatwayservice.GatWayServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="notification" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.notification.NotificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProduitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Produit" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.produit.ProduitApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VenteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Vente" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.vente.VenteApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4aa65b93-8fc6-483a-bb3a-1fdcf80ace72" name="Changes" comment="" />
+      <created>1703503382100</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703503382100</updated>
+      <workItem from="1703503383170" duration="16000" />
+      <workItem from="1705593626876" duration="4518000" />
+      <workItem from="1705612784276" duration="1839000" />
+      <workItem from="1705666024234" duration="947000" />
+      <workItem from="1705667072223" duration="64000" />
+      <workItem from="1705679062550" duration="1904000" />
+      <workItem from="1706012397883" duration="20000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

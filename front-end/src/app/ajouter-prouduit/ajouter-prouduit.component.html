@@ -1,0 +1,39 @@
+<div class="mt-5">
+  <h3 class="text-center mb-3 text-primary font-weight-bold ">Ajouter un produit</h3>
+  <form (submit)="ajouterProduit()">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="form-group">
+          <label for="marque">Marque:</label>
+          <input type="text" class="form-control" id="marque" name="marque" [(ngModel)]="produit.marque" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="form-group">
+          <label for="prix">Prix:</label>
+          <input type="number" class="form-control" id="prix" name="prix" [(ngModel)]="produit.prix" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="form-group">
+          <label for="quantite">Quantité:</label>
+          <input type="number" class="form-control" id="quantite" name="quantie" [(ngModel)]="produit.quantie" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <button type="submit" class="btn btn-success btn-block"  >  Ajouter un produit
+        </button>
+
+      </div>
+    </div>
+  </form>
+</div>

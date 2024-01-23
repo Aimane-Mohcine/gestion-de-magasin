@@ -1,0 +1,52 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card text-center">
+        <div class="card-header bg-primary">
+          <h4 class="text-light mb-0 rounded-bottom-3">Formulaire d'Achat</h4>
+        </div>
+        <div class="card-body">
+          <form (submit)="submitAchatForm()" class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="nomAcheteur">Nom de l'Acheteur :</label>
+            <input type="text" class="form-control" id="nomAcheteur" placeholder="Entrez le nom" name="nom" [(ngModel)]="nom" required>
+
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="villeAcheteur">Ville de l'Acheteur :</label>
+            <input type="text" class="form-control" id="villeAcheteur" placeholder="Entrez la ville" name="ville" [(ngModel)]="ville" required>
+
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="nomProduit">Nom du Produit :</label>
+            <input type="text" class="form-control" id="nomProduit"  name="marqueProduit" [(ngModel)]="produits.marque"   [readonly]="true">
+
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="prixProduit">Prix du Produit :</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+              </div>
+              <input type="number" class="form-control" id="prixProduit"  name="prixProduit" [(ngModel)]="produits.prix"  [readonly]="true">
+              <div class="invalid-feedback">
+                Veuillez fournir un prix de produit valide.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-3">
+          <button type="submit" class="btn btn-success">Acheter le Produit</button>
+        </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
